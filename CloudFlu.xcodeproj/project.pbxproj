@@ -8,20 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		4DFEC65B2156B094008B6312 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEC65A2156B094008B6312 /* AppDelegate.m */; };
-		4DFEC65E2156B094008B6312 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEC65D2156B094008B6312 /* ViewController.m */; };
 		4DFEC6612156B094008B6312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC65F2156B094008B6312 /* Main.storyboard */; };
 		4DFEC6632156B095008B6312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC6622156B095008B6312 /* Assets.xcassets */; };
 		4DFEC6662156B095008B6312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC6642156B095008B6312 /* LaunchScreen.storyboard */; };
 		4DFEC6692156B095008B6312 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEC6682156B095008B6312 /* main.m */; };
 		4DFEC6722156B14D008B6312 /* QuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEC6712156B14D008B6312 /* QuadTree.m */; };
+		4DFEC6752156C732008B6312 /* CoordinateQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEC6742156C732008B6312 /* CoordinateQuadTree.m */; };
+		4DFEC6782156C767008B6312 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFEC6772156C767008B6312 /* MapKit.framework */; };
+		4DFEC67A2156C76B008B6312 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFEC6792156C76B008B6312 /* CoreLocation.framework */; };
+		4DFEC6902156D086008B6312 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC67C2156D085008B6312 /* 2.json */; };
+		4DFEC6912156D086008B6312 /* 4.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC67D2156D085008B6312 /* 4.json */; };
+		4DFEC6922156D086008B6312 /* 31.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC67E2156D085008B6312 /* 31.json */; };
+		4DFEC6932156D086008B6312 /* 34.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC67F2156D085008B6312 /* 34.json */; };
+		4DFEC6942156D086008B6312 /* 10.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC6802156D085008B6312 /* 10.json */; };
+		4DFEC6952156D086008B6312 /* 15.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC6812156D085008B6312 /* 15.json */; };
+		4DFEC6962156D086008B6312 /* 50.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC6822156D085008B6312 /* 50.json */; };
+		4DFEC6972156D086008B6312 /* 16.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC6832156D085008B6312 /* 16.json */; };
+		4DFEC6982156D086008B6312 /* 48.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC6842156D086008B6312 /* 48.json */; };
+		4DFEC6992156D086008B6312 /* 22.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC6852156D086008B6312 /* 22.json */; };
+		4DFEC69A2156D086008B6312 /* 30.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC6862156D086008B6312 /* 30.json */; };
+		4DFEC69B2156D086008B6312 /* 18.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC6872156D086008B6312 /* 18.json */; };
+		4DFEC69C2156D086008B6312 /* 46.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC6882156D086008B6312 /* 46.json */; };
+		4DFEC69D2156D086008B6312 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC6892156D086008B6312 /* 1.json */; };
+		4DFEC69E2156D086008B6312 /* 14.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC68A2156D086008B6312 /* 14.json */; };
+		4DFEC69F2156D086008B6312 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC68B2156D086008B6312 /* 3.json */; };
+		4DFEC6A02156D086008B6312 /* 7.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC68C2156D086008B6312 /* 7.json */; };
+		4DFEC6A12156D086008B6312 /* 32.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC68D2156D086008B6312 /* 32.json */; };
+		4DFEC6A22156D086008B6312 /* 33.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC68E2156D086008B6312 /* 33.json */; };
+		4DFEC6A32156D086008B6312 /* 24.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC68F2156D086008B6312 /* 24.json */; };
+		4DFEC6A72156E7E3008B6312 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEC6A62156E7E3008B6312 /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4DFEC6562156B094008B6312 /* CloudFlu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFlu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFEC6592156B094008B6312 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DFEC65A2156B094008B6312 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4DFEC65C2156B094008B6312 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4DFEC65D2156B094008B6312 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4DFEC6602156B094008B6312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DFEC6622156B095008B6312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DFEC6652156B095008B6312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,6 +50,33 @@
 		4DFEC6682156B095008B6312 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4DFEC6702156B14D008B6312 /* QuadTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuadTree.h; sourceTree = "<group>"; };
 		4DFEC6712156B14D008B6312 /* QuadTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuadTree.m; sourceTree = "<group>"; };
+		4DFEC6732156C732008B6312 /* CoordinateQuadTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinateQuadTree.h; sourceTree = "<group>"; };
+		4DFEC6742156C732008B6312 /* CoordinateQuadTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoordinateQuadTree.m; sourceTree = "<group>"; };
+		4DFEC6772156C767008B6312 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4DFEC6792156C76B008B6312 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4DFEC67C2156D085008B6312 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
+		4DFEC67D2156D085008B6312 /* 4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 4.json; sourceTree = "<group>"; };
+		4DFEC67E2156D085008B6312 /* 31.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 31.json; sourceTree = "<group>"; };
+		4DFEC67F2156D085008B6312 /* 34.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 34.json; sourceTree = "<group>"; };
+		4DFEC6802156D085008B6312 /* 10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 10.json; sourceTree = "<group>"; };
+		4DFEC6812156D085008B6312 /* 15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 15.json; sourceTree = "<group>"; };
+		4DFEC6822156D085008B6312 /* 50.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 50.json; sourceTree = "<group>"; };
+		4DFEC6832156D085008B6312 /* 16.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 16.json; sourceTree = "<group>"; };
+		4DFEC6842156D086008B6312 /* 48.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 48.json; sourceTree = "<group>"; };
+		4DFEC6852156D086008B6312 /* 22.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 22.json; sourceTree = "<group>"; };
+		4DFEC6862156D086008B6312 /* 30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 30.json; sourceTree = "<group>"; };
+		4DFEC6872156D086008B6312 /* 18.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 18.json; sourceTree = "<group>"; };
+		4DFEC6882156D086008B6312 /* 46.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 46.json; sourceTree = "<group>"; };
+		4DFEC6892156D086008B6312 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
+		4DFEC68A2156D086008B6312 /* 14.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 14.json; sourceTree = "<group>"; };
+		4DFEC68B2156D086008B6312 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
+		4DFEC68C2156D086008B6312 /* 7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 7.json; sourceTree = "<group>"; };
+		4DFEC68D2156D086008B6312 /* 32.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 32.json; sourceTree = "<group>"; };
+		4DFEC68E2156D086008B6312 /* 33.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 33.json; sourceTree = "<group>"; };
+		4DFEC68F2156D086008B6312 /* 24.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 24.json; sourceTree = "<group>"; };
+		4DFEC6A42156E700008B6312 /* CoordinateQuadTreeControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinateQuadTreeControllerDelegate.h; sourceTree = "<group>"; };
+		4DFEC6A52156E7E3008B6312 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		4DFEC6A62156E7E3008B6312 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DFEC67A2156C76B008B6312 /* CoreLocation.framework in Frameworks */,
+				4DFEC6782156C767008B6312 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +97,7 @@
 			children = (
 				4DFEC6582156B094008B6312 /* CloudFlu */,
 				4DFEC6572156B094008B6312 /* Products */,
+				4DFEC6762156C766008B6312 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +114,9 @@
 			children = (
 				4DFEC6592156B094008B6312 /* AppDelegate.h */,
 				4DFEC65A2156B094008B6312 /* AppDelegate.m */,
-				4DFEC65C2156B094008B6312 /* ViewController.h */,
-				4DFEC65D2156B094008B6312 /* ViewController.m */,
+				4DFEC6A52156E7E3008B6312 /* MapViewController.h */,
+				4DFEC6A62156E7E3008B6312 /* MapViewController.m */,
+				4DFEC67B2156CA97008B6312 /* Fallback Data */,
 				4DFEC66F2156B0F6008B6312 /* QuadTree */,
 				4DFEC65F2156B094008B6312 /* Main.storyboard */,
 				4DFEC6622156B095008B6312 /* Assets.xcassets */,
@@ -80,8 +132,47 @@
 			children = (
 				4DFEC6702156B14D008B6312 /* QuadTree.h */,
 				4DFEC6712156B14D008B6312 /* QuadTree.m */,
+				4DFEC6732156C732008B6312 /* CoordinateQuadTree.h */,
+				4DFEC6742156C732008B6312 /* CoordinateQuadTree.m */,
+				4DFEC6A42156E700008B6312 /* CoordinateQuadTreeControllerDelegate.h */,
 			);
 			path = QuadTree;
+			sourceTree = "<group>";
+		};
+		4DFEC6762156C766008B6312 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DFEC6792156C76B008B6312 /* CoreLocation.framework */,
+				4DFEC6772156C767008B6312 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DFEC67B2156CA97008B6312 /* Fallback Data */ = {
+			isa = PBXGroup;
+			children = (
+				4DFEC6892156D086008B6312 /* 1.json */,
+				4DFEC67C2156D085008B6312 /* 2.json */,
+				4DFEC68B2156D086008B6312 /* 3.json */,
+				4DFEC67D2156D085008B6312 /* 4.json */,
+				4DFEC68C2156D086008B6312 /* 7.json */,
+				4DFEC6802156D085008B6312 /* 10.json */,
+				4DFEC68A2156D086008B6312 /* 14.json */,
+				4DFEC6812156D085008B6312 /* 15.json */,
+				4DFEC6832156D085008B6312 /* 16.json */,
+				4DFEC6872156D086008B6312 /* 18.json */,
+				4DFEC6852156D086008B6312 /* 22.json */,
+				4DFEC68F2156D086008B6312 /* 24.json */,
+				4DFEC6862156D086008B6312 /* 30.json */,
+				4DFEC67E2156D085008B6312 /* 31.json */,
+				4DFEC68D2156D086008B6312 /* 32.json */,
+				4DFEC68E2156D086008B6312 /* 33.json */,
+				4DFEC67F2156D085008B6312 /* 34.json */,
+				4DFEC6882156D086008B6312 /* 46.json */,
+				4DFEC6842156D086008B6312 /* 48.json */,
+				4DFEC6822156D085008B6312 /* 50.json */,
+			);
+			path = "Fallback Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +232,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DFEC69F2156D086008B6312 /* 3.json in Resources */,
+				4DFEC6A32156D086008B6312 /* 24.json in Resources */,
+				4DFEC69E2156D086008B6312 /* 14.json in Resources */,
+				4DFEC6942156D086008B6312 /* 10.json in Resources */,
+				4DFEC6912156D086008B6312 /* 4.json in Resources */,
+				4DFEC6902156D086008B6312 /* 2.json in Resources */,
+				4DFEC6A02156D086008B6312 /* 7.json in Resources */,
+				4DFEC6982156D086008B6312 /* 48.json in Resources */,
+				4DFEC6972156D086008B6312 /* 16.json in Resources */,
 				4DFEC6662156B095008B6312 /* LaunchScreen.storyboard in Resources */,
+				4DFEC6A12156D086008B6312 /* 32.json in Resources */,
+				4DFEC69B2156D086008B6312 /* 18.json in Resources */,
+				4DFEC6922156D086008B6312 /* 31.json in Resources */,
+				4DFEC69D2156D086008B6312 /* 1.json in Resources */,
 				4DFEC6632156B095008B6312 /* Assets.xcassets in Resources */,
+				4DFEC69C2156D086008B6312 /* 46.json in Resources */,
+				4DFEC6992156D086008B6312 /* 22.json in Resources */,
+				4DFEC6962156D086008B6312 /* 50.json in Resources */,
+				4DFEC6952156D086008B6312 /* 15.json in Resources */,
 				4DFEC6612156B094008B6312 /* Main.storyboard in Resources */,
+				4DFEC69A2156D086008B6312 /* 30.json in Resources */,
+				4DFEC6932156D086008B6312 /* 34.json in Resources */,
+				4DFEC6A22156D086008B6312 /* 33.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,9 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DFEC6722156B14D008B6312 /* QuadTree.m in Sources */,
-				4DFEC65E2156B094008B6312 /* ViewController.m in Sources */,
 				4DFEC6692156B095008B6312 /* main.m in Sources */,
+				4DFEC6A72156E7E3008B6312 /* MapViewController.m in Sources */,
 				4DFEC65B2156B094008B6312 /* AppDelegate.m in Sources */,
+				4DFEC6752156C732008B6312 /* CoordinateQuadTree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

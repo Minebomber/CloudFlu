@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MapViewController.h
 //  CloudFlu
 //
 //  Created by Mark Lagae on 9/22/18.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MapViewController : UIViewController
 
 @end
-
