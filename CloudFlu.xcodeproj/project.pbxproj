@@ -13,6 +13,7 @@
 		4DFEC6632156B095008B6312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC6622156B095008B6312 /* Assets.xcassets */; };
 		4DFEC6662156B095008B6312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC6642156B095008B6312 /* LaunchScreen.storyboard */; };
 		4DFEC6692156B095008B6312 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEC6682156B095008B6312 /* main.m */; };
+		4DFEC6722156B14D008B6312 /* QuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEC6712156B14D008B6312 /* QuadTree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		4DFEC6652156B095008B6312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DFEC6672156B095008B6312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DFEC6682156B095008B6312 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4DFEC6702156B14D008B6312 /* QuadTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuadTree.h; sourceTree = "<group>"; };
+		4DFEC6712156B14D008B6312 /* QuadTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuadTree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 				4DFEC65A2156B094008B6312 /* AppDelegate.m */,
 				4DFEC65C2156B094008B6312 /* ViewController.h */,
 				4DFEC65D2156B094008B6312 /* ViewController.m */,
+				4DFEC66F2156B0F6008B6312 /* QuadTree */,
 				4DFEC65F2156B094008B6312 /* Main.storyboard */,
 				4DFEC6622156B095008B6312 /* Assets.xcassets */,
 				4DFEC6642156B095008B6312 /* LaunchScreen.storyboard */,
@@ -69,6 +73,15 @@
 				4DFEC6682156B095008B6312 /* main.m */,
 			);
 			path = CloudFlu;
+			sourceTree = "<group>";
+		};
+		4DFEC66F2156B0F6008B6312 /* QuadTree */ = {
+			isa = PBXGroup;
+			children = (
+				4DFEC6702156B14D008B6312 /* QuadTree.h */,
+				4DFEC6712156B14D008B6312 /* QuadTree.m */,
+			);
+			path = QuadTree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DFEC6722156B14D008B6312 /* QuadTree.m in Sources */,
 				4DFEC65E2156B094008B6312 /* ViewController.m in Sources */,
 				4DFEC6692156B095008B6312 /* main.m in Sources */,
 				4DFEC65B2156B094008B6312 /* AppDelegate.m in Sources */,
@@ -284,6 +298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QCCRA973W5;
 				INFOPLIST_FILE = CloudFlu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QCCRA973W5;
 				INFOPLIST_FILE = CloudFlu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
