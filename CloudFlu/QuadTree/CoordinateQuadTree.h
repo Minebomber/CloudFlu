@@ -10,14 +10,14 @@
 #import <MapKit/MapKit.h>
 #import "QuadTree.h"
 #import "CoordinateQuadTreeControllerDelegate.h"
+#import "IllnessCircle.h"
 
 @interface CoordinateQuadTree : NSObject
 
 @property (nonatomic, weak) id <CoordinateQuadTreeControllerDelegate> delegate;
 @property (assign, nonatomic) QuadTreeNode *root;
-@property (assign, nonatomic) MKMapView *mapView;
 
 - (void)buildTree:(NSArray *)ids;
-- (NSArray *)annotationsWithinMapRect:(MKMapRect)rect withZoomScale:(double)zoomScale;
+- (NSArray *)circlesWithinMapRect:(MKMapRect)rect withZoomScale:(double)zoomScale withIds:(NSArray *)ids;
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "CoordinateQuadTree.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,8 +17,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    CoordinateQuadTree *qt = [[CoordinateQuadTree alloc] init];
-    [qt buildTree:@[@1]];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"info" ofType:@"json"];
+        NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
+        NSAssert(jsonData != nil, @"Reading data from file failed");
+        NSError *parseError = nil;
+        NSArray *illnessInfo = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&parseError];
+        NSAssert(parseError == nil, @"Error parsing JSON data");
+        
+        self.illnessInfo = illnessInfo;
+    });
+    
     return YES;
 }
 

@@ -41,7 +41,7 @@ NSInteger ZoomScaleToZoomLevel(MKZoomScale scale) {
     return zoomLevel;
 }
 
-float TBCellSizeForZoomScale(MKZoomScale zoomScale) {
+float CellSizeForZoomScale(MKZoomScale zoomScale) {
     NSInteger zoomLevel = ZoomScaleToZoomLevel(zoomScale);
     
     switch (zoomLevel) {
@@ -66,12 +66,9 @@ QuadTreeNodeData DataFromIllness(NSDictionary *illness) {
     double lon = [[illness objectForKey:@"lon"] doubleValue];
     
     int idNumber = [[illness objectForKey:@"illness"] intValue];
-    srand(idNumber);
-    double h = rand() % 255 / 255.0;
     
     IllnessInfo *illnessInfo = malloc(sizeof(IllnessInfo));
     illnessInfo->idNumber = idNumber;
-    illnessInfo->h = h;
     
     return QuadTreeNodeDataMake(lat, lon, illnessInfo);
 }
@@ -93,7 +90,7 @@ QuadTreeNodeData DataFromIllness(NSDictionary *illness) {
             NSArray *illnessData = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&parseError];
             NSAssert(parseError == nil, @"Error parsing JSON data");
             [illnessArray addObjectsFromArray:illnessData];
-            NSLog(@"Finished loading %d.json", illnessId);
+            NSLog(@"[COORD TREE] Finished loading %d.json", illnessId);
         }
         
         NSInteger count = [illnessArray count];
@@ -107,9 +104,47 @@ QuadTreeNodeData DataFromIllness(NSDictionary *illness) {
         self->_root = QuadTreeBuildWithData(dataArray, (int)count, world, 4);
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            [_delegate quadTreeControllerDidLoadData];
+            [self->_delegate quadTreeControllerDidLoadData];
         });
     });
 }
+
+- (NSArray *)circlesWithinMapRect:(MKMapRect)rect withZoomScale:(double)zoomScale withIds:(NSArray *)ids {
+    double cellSize = CellSizeForZoomScale(zoomScale);
+    double scaleFactor = zoomScale / cellSize;
+    NSInteger minX = floor(MKMapRectGetMinX(rect) * scaleFactor);
+    NSInteger maxX = floor(MKMapRectGetMaxX(rect) * scaleFactor);
+    NSInteger minY = floor(MKMapRectGetMinY(rect) * scaleFactor);
+    NSInteger maxY = floor(MKMapRectGetMaxY(rect) * scaleFactor);
+    
+    NSMutableArray *circles = [[NSMutableArray alloc] init];
+    
+    int maxId = [[ids valueForKeyPath:@"@max.intValue"] intValue];
+    
+    NSMutableArray *idCounts = [NSMutableArray array];
+    for (int i = 0; i < maxId + 1; i++) {
+        [idCounts addObject:@(0)];
+    }
+    
+    for (NSInteger x = minX; x <= maxX; x++) {
+        for (NSInteger y = minY; y <= maxY; y++) {
+            MKMapRect mapRect = MKMapRectMake(x / scaleFactor, y / scaleFactor, 1.0 / scaleFactor, 1.0 / scaleFactor);
+            
+            QuadTreeGatherDataInRange(self.root, BoundingBoxForMapRect(mapRect), ^(QuadTreeNodeData data) {
+                IllnessInfo *currentIllnessInfo = (IllnessInfo *)data.data;
+                int currentId = currentIllnessInfo->idNumber;
+                if (![ids containsObject:@(currentId)]) { return; }
+                [idCounts replaceObjectAtIndex:currentId withObject:@([[idCounts objectAtIndex:currentId] intValue] + 1)];
+                if ([[idCounts objectAtIndex:currentId] intValue] >= 1000 / ids.count) { return; }
+                CLLocationCoordinate2D center = CLLocationCoordinate2DMake(data.x, data.y);
+                IllnessCircle *illnessCircle = [IllnessCircle circleWithCenterCoordinate:center radius:5000];
+                [illnessCircle setId:currentIllnessInfo->idNumber];
+                [circles addObject:illnessCircle];
+            });
+        }
+    }
+    return [circles copy];
+}
+
 
 @end

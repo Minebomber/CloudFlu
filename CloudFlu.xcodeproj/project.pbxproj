@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D6B777B215786CC00B6BDBF /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6B777A215786CC00B6BDBF /* FilterViewController.m */; };
+		4DA5481221578E500022D6FA /* FilterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA5481121578E500022D6FA /* FilterTableViewCell.m */; };
+		4DA548142157C49D0022D6FA /* info.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DA548132157C49D0022D6FA /* info.json */; };
 		4DFEC65B2156B094008B6312 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEC65A2156B094008B6312 /* AppDelegate.m */; };
 		4DFEC6612156B094008B6312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC65F2156B094008B6312 /* Main.storyboard */; };
 		4DFEC6632156B095008B6312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC6622156B095008B6312 /* Assets.xcassets */; };
@@ -37,9 +40,16 @@
 		4DFEC6A22156D086008B6312 /* 33.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC68E2156D086008B6312 /* 33.json */; };
 		4DFEC6A32156D086008B6312 /* 24.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DFEC68F2156D086008B6312 /* 24.json */; };
 		4DFEC6A72156E7E3008B6312 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEC6A62156E7E3008B6312 /* MapViewController.m */; };
+		4DFEC6AA2156E9FF008B6312 /* IllnessCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEC6A92156E9FF008B6312 /* IllnessCircle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D6B7779215786CC00B6BDBF /* FilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		4D6B777A215786CC00B6BDBF /* FilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		4DA5481021578E500022D6FA /* FilterTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterTableViewCell.h; sourceTree = "<group>"; };
+		4DA5481121578E500022D6FA /* FilterTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterTableViewCell.m; sourceTree = "<group>"; };
+		4DA548132157C49D0022D6FA /* info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = info.json; sourceTree = "<group>"; };
+		4DA548182157CB690022D6FA /* UIView+FindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FindViewController.h"; sourceTree = "<group>"; };
 		4DFEC6562156B094008B6312 /* CloudFlu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFlu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFEC6592156B094008B6312 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DFEC65A2156B094008B6312 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +87,8 @@
 		4DFEC6A42156E700008B6312 /* CoordinateQuadTreeControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinateQuadTreeControllerDelegate.h; sourceTree = "<group>"; };
 		4DFEC6A52156E7E3008B6312 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		4DFEC6A62156E7E3008B6312 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		4DFEC6A82156E9FF008B6312 /* IllnessCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IllnessCircle.h; sourceTree = "<group>"; };
+		4DFEC6A92156E9FF008B6312 /* IllnessCircle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IllnessCircle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +128,12 @@
 				4DFEC65A2156B094008B6312 /* AppDelegate.m */,
 				4DFEC6A52156E7E3008B6312 /* MapViewController.h */,
 				4DFEC6A62156E7E3008B6312 /* MapViewController.m */,
+				4D6B7779215786CC00B6BDBF /* FilterViewController.h */,
+				4D6B777A215786CC00B6BDBF /* FilterViewController.m */,
+				4DA5481021578E500022D6FA /* FilterTableViewCell.h */,
+				4DA5481121578E500022D6FA /* FilterTableViewCell.m */,
+				4DA548182157CB690022D6FA /* UIView+FindViewController.h */,
+				4DFEC6AB2156EB3F008B6312 /* IllnessCircle */,
 				4DFEC67B2156CA97008B6312 /* Fallback Data */,
 				4DFEC66F2156B0F6008B6312 /* QuadTree */,
 				4DFEC65F2156B094008B6312 /* Main.storyboard */,
@@ -171,8 +189,18 @@
 				4DFEC6882156D086008B6312 /* 46.json */,
 				4DFEC6842156D086008B6312 /* 48.json */,
 				4DFEC6822156D085008B6312 /* 50.json */,
+				4DA548132157C49D0022D6FA /* info.json */,
 			);
 			path = "Fallback Data";
+			sourceTree = "<group>";
+		};
+		4DFEC6AB2156EB3F008B6312 /* IllnessCircle */ = {
+			isa = PBXGroup;
+			children = (
+				4DFEC6A82156E9FF008B6312 /* IllnessCircle.h */,
+				4DFEC6A92156E9FF008B6312 /* IllnessCircle.m */,
+			);
+			path = IllnessCircle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +265,7 @@
 				4DFEC69E2156D086008B6312 /* 14.json in Resources */,
 				4DFEC6942156D086008B6312 /* 10.json in Resources */,
 				4DFEC6912156D086008B6312 /* 4.json in Resources */,
+				4DA548142157C49D0022D6FA /* info.json in Resources */,
 				4DFEC6902156D086008B6312 /* 2.json in Resources */,
 				4DFEC6A02156D086008B6312 /* 7.json in Resources */,
 				4DFEC6982156D086008B6312 /* 48.json in Resources */,
@@ -265,9 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DFEC6AA2156E9FF008B6312 /* IllnessCircle.m in Sources */,
+				4DA5481221578E500022D6FA /* FilterTableViewCell.m in Sources */,
 				4DFEC6722156B14D008B6312 /* QuadTree.m in Sources */,
 				4DFEC6692156B095008B6312 /* main.m in Sources */,
 				4DFEC6A72156E7E3008B6312 /* MapViewController.m in Sources */,
+				4D6B777B215786CC00B6BDBF /* FilterViewController.m in Sources */,
 				4DFEC65B2156B094008B6312 /* AppDelegate.m in Sources */,
 				4DFEC6752156C732008B6312 /* CoordinateQuadTree.m in Sources */,
 			);
